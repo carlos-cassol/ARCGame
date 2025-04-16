@@ -1,26 +1,7 @@
-body {
-  font-family: sans-serif;
-  text-align: center;
-  padding-top: 2rem;
-}
-.bolinhas-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
 .bolinha {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   display: inline-block;
-}
-button {
-  margin: 1rem 0.5rem;
-  padding: 0.5rem 1.2rem;
-}
-#mensagem {
-  margin-top: 1rem;
-  font-size: 1.3rem;
+  border: 2px solid #333;
 }
