@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo das Bolinhas - Portas Lógicas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Jogo das Bolinhas 🎯</h2>
+  <div id="pergunta"></div>
+  <div class="bolinhas-container">
+    <div id="bolinha1" class="bolinha"></div>
+    <span id="operador"></span>
+    <div id="bolinha2" class="bolinha"></div>
+  </div>
+  <p id="descricao"></p>
+  <p>= ?</p>
+  <button onclick="responder(true)">Verdadeiro</button>
+  <button onclick="responder(false)">Falso</button>
+  <div id="mensagem"></div>
+  <script src="script.js"></script>
+</body>
+</html>
