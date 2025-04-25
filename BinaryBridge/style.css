@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+  
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 38px;
+  color: #ff0000;
+  text-shadow: 2px 2px 0 #000000, 4px 4px 0 #ffff00;
+  margin-bottom: 100px;
+}
+
+p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 16px;
+  color: #222;
+  text-shadow: 1px 1px 0 #fff;
+  margin-bottom: 20px;
+}
+
+#level,
+#decimalValue {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  color: #ff0000;
+  text-shadow: 2px 2px 0 #000000, 4px 4px 0 #ffff00;
+  margin-bottom: 10px;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  position: relative;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  background: linear-gradient(135deg, #a0522d 20%, #8b4513 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #5c3317;
+  border-radius: 8px;
+  box-shadow: inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.player {
+  background-color: #f90;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 70px;
+  transition: transform 0.5s ease;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+#controls {
+  margin-top: 20px;
+}
+
+/* BOTÕES COM ESTILO RETRÔ */
+#controls button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  color: #ff0000;
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 12px 20px;
+  margin: 10px;
+  cursor: pointer;
+  text-shadow: 2px 2px 0 #000000, 4px 4px 0 #ffff00;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#controls button:hover {
+  background-color: #ffe;
+  transform: scale(1.05);
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#victoryMessage {
+  font-size: 28px;
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+a.btn-voltar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #000; /* Cor preta */
+  border: 2px solid #000; /* Borda preta */
+  border-radius: 8px; /* Bordas arredondadas */
+  transition: all 0.3s ease;
+}
+
+a.btn-voltar:hover {
+  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+  color: #ff6a00; /* Cor do texto ao passar o mouse */
+  border-color: #ff6a00; /* Borda com cor laranja */
+}

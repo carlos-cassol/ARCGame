@@ -1,7 +1,29 @@
 .bolinha {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: inline-block;
-  border: 2px solid #333;
-}
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #333;
+  }
+
+  a.btn-voltar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #000; /* Cor preta */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: all 0.3s ease;
+  }
+  
+  a.btn-voltar:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+    color: #ff6a00; /* Cor do texto ao passar o mouse */
+    border-color: #ff6a00; /* Borda com cor laranja */
+  }
